@@ -5,12 +5,13 @@ molecool
 [![codecov](https://codecov.io/gh/REPLACE_WITH_OWNER_ACCOUNT/molecool/branch/master/graph/badge.svg)](https://codecov.io/gh/REPLACE_WITH_OWNER_ACCOUNT/molecool/branch/master)
 
 
-This is a test project 
-This is a test project
+A python package for analyzing and visualizing xyz and pdb files. This repository is under development. To install, download this repository and type
+
+`pip install -e .`
 
 ### Copyright
 
-Copyright (c) 2021, Anand Ojha
+Copyright (c) 2021, Eliseo Marin and Jessica Nash
 
 
 #### Acknowledgements

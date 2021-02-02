@@ -1,6 +1,6 @@
 """
 molecool
-This is a test project 
+A python package for analyzing and visualizing xyz and pdb files
 """
 
 # Add imports here

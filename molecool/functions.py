@@ -1,67 +1,37 @@
 """
 functions.py
-This is a test project 
+A python package for analyzing and visualizing xyz and pdb files
 
 Handles the primary functions
 """
 
-
-def canvas(with_attribution=True):
-    """
-    Placeholder function to show example docstring (NumPy format)
-
-    Replace this function and doc string for your own project
-
-    Parameters
-    ----------
-    with_attribution : bool, Optional, default: True
-        Set whether or not to display who the quote is from
-
-    Returns
-    -------
-    quote : str
-        Compiled string including quote and optional attribution
-    """
-
-    quote = "The code is but a canvas to our imagination."
-    if with_attribution:
-        quote += "\n\t- Adapted from Henry David Thoreau"
-    return quote
-
-
-if __name__ == "__main__":
-    # Do something if this file is invoked on its own
-    print(canvas())
-
 import numpy as np
 import matplotlib.pyplot as plt
 
-from mpl_toolkits.mplot3d import Axes3D #noqa:F401
+from mpl_toolkits.mplot3d import Axes3D  # noqa: F401
 
 
 def calculate_distance(rA, rB):
-    # This function calculates the distance between two points given as numpy arrays.
     """
-    Distance bwteen two point.
+    Calculate the distance between two points.
 
     Parameters
     ----------
-    rA, rB: np.ndarray   
-        The coordinates of each point
+    rA, rB : np.ndarray
+        The coordinates of each point. 
 
-    Returns 
+    Returns
     -------
     dist : float
-        The distance between two points 
+        The distance between the two points.
 
-    Examples 
+    Examples
     --------
-    >>> r1 = np.array ([0,0,0])
-    >>> r2 = np.array([0,0,1])
-    >>> calculate_distance (r1, r2)
+    >>> r1 = np.array([0, 0, 0])
+    >>> r2 = np.array([0, 0.1, 0])
+    >>> caculate_distance(r1, r2)
     0.1
     """
-
     d = rA - rB
     dist = np.linalg.norm(d)
     return dist
@@ -230,3 +200,31 @@ atom_colors = {
     "Br": "#F4A460",
     "S": "yellow",
 }
+
+
+def canvas(with_attribution=True):
+    """
+    Placeholder function to show example docstring (NumPy format)
+
+    Replace this function and doc string for your own project
+
+    Parameters
+    ----------
+    with_attribution : bool, Optional, default: True
+        Set whether or not to display who the quote is from
+
+    Returns
+    -------
+    quote : str
+        Compiled string including quote and optional attribution
+    """
+
+    quote = "The code is but a canvas to our imagination."
+    if with_attribution:
+        quote += "\n\t- Adapted from Henry David Thoreau"
+    return quote
+
+
+if __name__ == "__main__":
+    # Do something if this file is invoked on its own
+    print(canvas())

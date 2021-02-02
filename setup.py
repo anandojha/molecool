@@ -1,6 +1,6 @@
 """
 molecool
-This is a test project 
+A python package for analyzing and visualizing xyz and pdb files
 """
 import sys
 from setuptools import setup, find_packages
@@ -22,8 +22,8 @@ except:
 setup(
     # Self-descriptive entries which should always be present
     name='molecool',
-    author='Anand Ojha',
-    author_email='aaojha@ucsd.edu',
+    author='Eliseo Marin and Jessica Nash',
+    author_email='meliseo@vt.edu',
     description=short_description[0],
     long_description=long_description,
     long_description_content_type="text/markdown",

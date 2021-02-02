@@ -23,9 +23,9 @@ import molecool
 # -- Project information -----------------------------------------------------
 
 project = 'molecool'
-copyright = ("2021, Anand Ojha. Project structure based on the "
+copyright = ("2021, Eliseo Marin and Jessica Nash. Project structure based on the "
              "Computational Molecular Science Python Cookiecutter version 1.5")
-author = 'Anand Ojha'
+author = 'Eliseo Marin'
 
 # The short X.Y version
 version = ''
@@ -166,7 +166,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, 'molecool', 'molecool Documentation',
-     author, 'molecool', 'This is a test project ',
+     author, 'molecool', 'A python package for analyzing and visualizing xyz and pdb files',
      'Miscellaneous'),
 ]
 

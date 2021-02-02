@@ -1,8 +1,4 @@
-"
-ls
-ls
-ls
-"
+"""
 Unit and regression test for the molecool package.
 """
 
