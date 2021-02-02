@@ -33,11 +33,10 @@ if __name__ == "__main__":
     # Do something if this file is invoked on its own
     print(canvas())
 
-import os
 import numpy as np
 import matplotlib.pyplot as plt
 
-from mpl_toolkits.mplot3d import Axes3D
+from mpl_toolkits.mplot3d import Axes3D #noqa:F401
 
 
 def calculate_distance(rA, rB):
